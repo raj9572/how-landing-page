@@ -1,3 +1,4 @@
+import 'react-toastify/dist/ReactToastify.css';
 import DataReview from "./components/Statistic"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
@@ -6,6 +7,7 @@ import Services from "./components/Services"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
   return (
      <>
      <Navbar/>
+     <ToastContainer />
      <div className="max-w-7xl mx-auto">
      <HeroSection/>
      <ProblemAndSolution/>

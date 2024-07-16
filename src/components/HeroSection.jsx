@@ -10,7 +10,7 @@ const HeroSection = () => {
       </h1>
       <p className="mb-8 leading-relaxed">Discover a world of Knowledge and fun with Learn while playing in the House of Wisdom , Where learning is always an adventure! . the House of Wisdom ensures that learning is always an exciting and memorable experience. Come join us and turn education into an unforgettable journey! </p>
       <div className="flex justify-center">
-        <button className="inline-flex text-white bg-pink-500 rounded-xl py-2 px-6 focus:outline-none hover:bg-indigo-600 font-medium text-lg">Explore</button>
+        <button className="inline-flex text-white bg-pink-500 rounded-xl py-2 px-6 focus:outline-none hover:bg-pink-600 font-medium text-lg">Explore</button>
       </div>
     </div>
     <div className="lg:max-w-md lg:w-full md:w-1/3 w-5/6">
