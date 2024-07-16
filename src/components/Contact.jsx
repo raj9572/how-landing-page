@@ -11,7 +11,7 @@ const Contact = () => {
      
      try {
        
-         const res = await fetch("http://localhost:3000/api/users/create-user", {
+         const res = await fetch("https://how-backend.vercel.app/api/users/create-user", {
                         method: "POST",
                         body: JSON.stringify({ name,email,phone,message }),
                         headers: {

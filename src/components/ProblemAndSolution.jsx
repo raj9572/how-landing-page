@@ -17,7 +17,7 @@ const ProblemAndSolution = () => {
         <div className="flex flex-col mb-10 lg:items-start items-center">
           
           <div className="flex-grow">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-3">which type of problem them the user was experiencing.</h2>
+            <h2 className="text-gray-900 text-lg title-font font-medium mb-3">why do we need to develop this platform.</h2>
             <p className="leading-relaxed text-base">Users may face the challenge of finding reliable, comprehensive resources on specific subjects without spending excessive time searching through various sources. An online library that provides easy access to well-organized, high-quality materials across all categories can solve this problem, ensuring users can efficiently locate the information they need.</p>
             
           </div>
