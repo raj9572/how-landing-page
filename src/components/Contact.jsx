@@ -80,8 +80,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="p-2 w-full">
-          <button disabled={name.length < 3 || !email.includes("@") || phone.length < 10} onClick={handleSubmit} className="flex mx-auto text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 cursor-pointer rounded-lg text-lg">
-          {showLoader && <FiLoader className="h-4 w-4 animate-spin"/>} Submit
+          <button disabled={name.length < 3 || !email.includes("@") || phone.length < 10} onClick={handleSubmit} className="flex items-center gap-2  mx-auto text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 cursor-pointer rounded-lg text-lg">
+          {showLoader && <FiLoader className="h-5 w-5 animate-spin"/>} Submit
             </button>
         </div>
        
