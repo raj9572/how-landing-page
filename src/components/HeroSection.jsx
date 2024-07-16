@@ -1,4 +1,5 @@
 
+import image from '../assets/home.jpg'
 const HeroSection = () => {
   return (
     <section id="home" className="text-gray-600 body-font  border-b-2 border-gray-300 ">
@@ -12,8 +13,8 @@ const HeroSection = () => {
         <button className="inline-flex text-white bg-pink-500 rounded-xl py-2 px-6 focus:outline-none hover:bg-indigo-600 font-medium text-lg">Explore</button>
       </div>
     </div>
-    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
+    <div className="lg:max-w-md lg:w-full md:w-1/3 w-5/6">
+      <img className="object-cover object-center rounded-lg" alt="hero" src={image} />
     </div>
   </div>
 </section>
