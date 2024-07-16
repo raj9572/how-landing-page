@@ -1,16 +1,19 @@
 import { useState } from "react"
 import { toast } from "react-toastify"
+import { FiLoader } from "react-icons/fi"
+
 
 const Contact = () => {
  const [name, setName] = useState("")
  const [email, setEmail] = useState("")
  const [phone, setPhone] = useState("")
  const [message, setMessage] = useState("")
+ const [showLoader , setShowLoader] = useState(false)
 
   const handleSubmit = async() =>{
      
      try {
-       
+       setShowLoader(true)
          const res = await fetch("https://how-backend.vercel.app/api/users/create-user", {
                         method: "POST",
                         body: JSON.stringify({ name,email,phone,message }),
@@ -33,7 +36,10 @@ const Contact = () => {
         setMessage("")
      } catch (error) {
       toast.error('errror while submit',error.message)
+     } finally{
+      setShowLoader(false)
      }
+
   }
 
 
@@ -74,7 +80,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="p-2 w-full">
-          <button disabled={name.length < 3 || !email.includes("@") || phone.length < 10} onClick={handleSubmit} className="flex mx-auto text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 cursor-pointer rounded-lg text-lg">Submit</button>
+          <button disabled={name.length < 3 || !email.includes("@") || phone.length < 10} onClick={handleSubmit} className="flex mx-auto text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 cursor-pointer rounded-lg text-lg">
+          {showLoader && <FiLoader className="h-4 w-4 animate-spin"/>} Submit
+            </button>
         </div>
        
       </div>
