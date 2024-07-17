@@ -71,7 +71,7 @@ const Contact = () => {
             <label htmlFor="number" className="leading-7 text-sm text-gray-600">Mobile Number</label>
             <input type="text" id="number" name="number" value={phone} onChange={(e)=>setPhone(e.target.value)} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
           </div>
-          <p className="text-red-500 text-sm">{phone && phone.length < 11 && "please enter 10 Char phone number" }</p>
+          <p className="text-red-500 text-sm">{phone && phone.trim().length < 10 && "please enter 10 Char phone number" }</p>
         </div>
         <div className="p-2 w-full">
           <div className="relative">
