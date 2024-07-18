@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { toast } from "react-toastify"
 import { FiLoader } from "react-icons/fi"
+import Aos from "aos"
 
 
 const Contact = () => {
@@ -43,14 +44,19 @@ const Contact = () => {
   }
 
 
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  })
+
+
   return (
     <section id="contact" className="text-gray-600 body-font relative border-b-2 border-gray-300">
   <div className="container px-5 py-24 mx-auto">
-    <div className="flex flex-col text-center w-full mb-12">
+    <div data-aos="fade-up" className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">If you are intrested Or for any query... Please Contact with me</p>
     </div>
-    <div className="lg:w-1/2 md:w-2/3 mx-auto">
+    <div data-aos="fade-up" className="lg:w-1/2 md:w-2/3 mx-auto">
       <div className="flex flex-wrap -m-2">
         <div className="p-2 w-1/2">
           <div className="relative">

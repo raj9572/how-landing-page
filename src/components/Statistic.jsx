@@ -1,7 +1,14 @@
+import Aos from "aos"
+import { useEffect } from "react"
 import { IoBookOutline } from "react-icons/io5"
 import { MdOutlinePlace } from "react-icons/md"
 
 const DataReview = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  })
+
   return (
     <section  id="community" className="text-gray-600 body-font border-b-2 border-gray-300">
   <div className="container px-5 pt-6 pb-14 mx-auto">
@@ -12,14 +19,14 @@ const DataReview = () => {
       </div>
     </div>
     <div className="flex flex-wrap -m-4 text-center">
-      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+      <div data-aos="fade-right" className="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
         <IoBookOutline className="text-5xl text-pink-500 text-cente block mx-auto mb-1"/>
           <h2 className="title-font font-medium text-3xl text-gray-900">2.7K</h2>
           <p className="leading-relaxed">Books Available</p>
         </div>
       </div>
-      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+      <div data-aos="fade-right" className="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-pink-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
             <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
@@ -30,7 +37,7 @@ const DataReview = () => {
           <p className="leading-relaxed">Users</p>
         </div>
       </div>
-      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+      <div data-aos="fade-left" className="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-pink-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
             <path d="M3 18v-6a9 9 0 0118 0v6"></path>
@@ -40,7 +47,7 @@ const DataReview = () => {
           <p className="leading-relaxed">Files</p>
         </div>
       </div>
-      <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+      <div data-aos="fade-left" className="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
         <MdOutlinePlace  className="text-5xl text-pink-500 text-cente block mx-auto mb-1" />
           <h2 className="title-font font-medium text-3xl text-gray-900">46</h2>

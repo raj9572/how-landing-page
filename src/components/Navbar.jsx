@@ -8,8 +8,8 @@ const Navbar = () => {
      <div className="shadow-md shadow-gray-300 sticky top-0 z-20 bg-white ">
             <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-4">
 
-            <div className="flex items-center flex-col gap-x-1">
-            <h1 className="text-2xl font-bold text-pink-500 ">Houseof-Wisdom</h1>
+            <div className="flex items-center  gap-x-1 ">
+            <h1 className="max-sm:text-xl text-2xl font-bold text-pink-500 ">Houseof-Wisdom</h1>
             
              </div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </ul>
             </div>}
 
-            <FaBars  onClick={()=>{setDropdown(!dropdown)}} className='w-8 h-8 cursor-pointer text-pink-500 ' />
+            <FaBars  onClick={()=>{setDropdown(!dropdown)}} className='w-8 h-8 max-sm:w-6 max-sm:h-6 cursor-pointer text-pink-500 ' />
             
         </div>
 

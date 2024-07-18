@@ -2,10 +2,15 @@ import { FaBookOpen, FaSearch } from "react-icons/fa"
 import { MdOutlineRecommend } from "react-icons/md";
 import { AiFillInteraction } from "react-icons/ai";
 import { IoLanguageSharp } from "react-icons/io5";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Services = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  })
   return (
-    <section id="services" className="text-gray-600 body-font border-b-2 border-gray-300">
+    <section id="services" className="text-gray-600 body-font border-b-2 border-gray-300 animate-appear">
   <div className="container px-5 py-14 mx-auto">
     <div className="text-center mb-12">
       <h1 className="text-3xl md:text-4xl font-semibold title-font text-gray-900 mb-4">Our Services</h1>
@@ -15,7 +20,7 @@ const Services = () => {
       </div>
     </div>
     <div className="flex flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-6 space-y-6">
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
+      <div data-aos="fade-up-right" className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-pink-500 mb-5 flex-shrink-0">
         <FaSearch className="text-xl" />
         </div>
@@ -29,7 +34,7 @@ const Services = () => {
           </a>
         </div>
       </div>
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
+      <div data-aos="fade-up" className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-pink-500 mb-5 flex-shrink-0">
         <MdOutlineRecommend className="text-3xl" />
         </div>
@@ -43,7 +48,7 @@ const Services = () => {
           </a>
         </div>
       </div>
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
+      <div data-aos="fade-up-left" className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-pink-500 mb-5 flex-shrink-0">
         <AiFillInteraction className="text-4xl" />
         </div>
@@ -57,7 +62,7 @@ const Services = () => {
           </a>
         </div>
       </div>
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
+      <div data-aos="fade-up-right" className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-pink-500 mb-5 flex-shrink-0">
         <FaBookOpen className="text-2xl" />
         </div>
@@ -71,7 +76,7 @@ const Services = () => {
           </a>
         </div>
       </div>
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
+      <div data-aos="fade-up-left" className="p-4 md:w-1/3 flex flex-col text-center items-center shadow-lg">
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-pink-500 mb-5 flex-shrink-0">
         <IoLanguageSharp className="text-2xl" />
         </div>
